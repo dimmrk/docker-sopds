@@ -1,4 +1,4 @@
-FROM python:3.4.5-alpine
+FROM python:3.5.2-alpine
 MAINTAINER mail@zveronline.ru
 
 ENV DB_USER=sopds \
