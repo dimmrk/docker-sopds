@@ -1,4 +1,4 @@
-FROM python:3.10.9-alpine3.16
+FROM python:3.9.16-bullseye
 MAINTAINER mail@zveronline.ru
 
 ENV DB_USER=sopds \
@@ -13,7 +13,7 @@ ENV DB_USER=sopds \
     SOPDS_SU_NAME="admin" \
     SOPDS_SU_EMAIL="admin@localhost" \
     SOPDS_SU_PASS="admin" \
-    SOPDS_TMBOT_ENABLE=False \
+    SOPDS_TMBOT_ENABLE=True \
     MIGRATE=False \
     CONV_LOG=/sopds/opds_catalog/log \
     VERSION=0.47
