@@ -24,7 +24,7 @@ converter="${run_path}/fb2c"
 if [ ! -z "${1}" ]; then
     if  [ -f "${1}" ] ; then
 	if [ ! -z "${2}" ] ; then
-	    tmp_path=$(dirname $(realpath ${2}))
+	    tmp_path=$(dirname ${2})
 	    tmp_name=$(basename "${1}" | sed s/\.${in_format}$/\.${out_format}/)
 	    if [ -d ${tmp_path} ] ; then
 		if [ -x ${converter} ] ; then
